@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
         - name: node-app
-          image: rohitsbargaje/nagp_kubernetes:v10
+          image: rohitsbargaje/nagp_kubernetes:v1
           resources:
             requests:
               cpu: 100m
