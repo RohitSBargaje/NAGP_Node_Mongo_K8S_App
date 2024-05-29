@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-app-deployment
+  namespace: nagp
+  labels:
+    tier: frontend
+    app: node-app
+spec:
+  selector:
+    matchLabels:
+      app: node-app
+  #replicas: 3
+  minReadySeconds: 10
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  template:
+    metadata:
+      name: node-app
+      labels:
+        app: node-app
+    spec:
+      containers:
+        - name: node-app
+          image: rohitsbargaje/nagp_kubernetes:v10
+          resources:
+            requests:
+              cpu: 100m
+              memory: "256Mi"
+            limits:
+              cpu: 200m
+              memory: "512Mi"
+          envFrom:
+          - configMapRef:
+              name: mongodb-config
+          env:            
+            - name: MONGO_DB_USER
+              valueFrom:
+                secretKeyRef:
+                  name: mongo-secret
+                  key: user
+            - name: MONGO_DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mongo-secret
+                  key: password
