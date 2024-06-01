@@ -16,7 +16,13 @@ http://104.199.159.198:3000/
 
 # Link for screen recording video.
 ```
-http://104.199.159.198:3000/
+https://nagarro-my.sharepoint.com/:f:/p/rohit_bargaje/EhnUqnwX7cVNmBj9WmPcrxMBKPgHIY37tyPAolJp0AVwXQ
+
+https://nagarro-my.sharepoint.com/:f:/p/rohit_bargaje/EhnUqnwX7cVNmBj9WmPcrxMBKPgHIY37tyPAolJp0AVwXQ?e=Kr1tZr
+
+https://nagarro-my.sharepoint.com/:f:/r/personal/rohit_bargaje_nagarro_com/Documents/RohitBargaje_3170768_k8s_Mongo_Node_App?csf=1&web=1&e=Oeno41
+
+Try to access first url. If not then go for second ot third url.
 ```
 
 
