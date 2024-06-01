@@ -35,10 +35,12 @@ docker push rohitsbargaje/nagp_kubernetes
 
 Note: Go to the root directory for executing the below commands
 
-Creating a new Kubernetes namespace
+Creating a new Kubernetes namespace:-
+
 kubectl apply -f ./k8s-GCP/namespace.yaml
 
-Swith to this namespace:-
+Switch to this namespace:-
+
 kubectl config set-context --current --namespace=nagp
 
 
