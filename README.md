@@ -25,7 +25,7 @@ http://104.199.159.198:3000/
 Note: Go to the app directory for executing the below commands
 
 docker login
-docker build -t rohitsbargaje/nagp_kubernetes:<tag> ./app
+docker build -t rohitsbargaje/nagp_kubernetes:v1 ./app
 docker push rohitsbargaje/nagp_kubernetes
 
 
