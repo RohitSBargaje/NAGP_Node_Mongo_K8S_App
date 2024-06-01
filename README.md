@@ -74,8 +74,8 @@ kubectl apply -f ./k8s-GCP/node-service/node-deployment.yaml
 7.Create Node App Service
 kubectl apply -f ./k8s-GCP/node-service/node-service.yaml
 
-8.Create Node App Service
-kubectl apply -f ./k8s-GCP/node-service/node-service.yaml
+8.Create HPA
+kubectl apply -f ./k8s-GCP/node-service/node-hpa.yaml
 ```
 
 
